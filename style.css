@@ -1,0 +1,588 @@
+/* ==========================
+   GOOGLE FONT
+========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+/* ==========================
+   RESET
+========================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+body{
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+    background:#08111f;
+    color:#fff;
+}
+/* ==========================
+   BACKGROUND
+========================== */
+.background{
+    position:fixed;
+    inset:0;
+    background:url("background.jpg") center/cover no-repeat;
+    z-index:-2;
+}
+.background::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(4,10,22,.75);
+    backdrop-filter:blur(2px);
+}
+/* ==========================
+   HEADER
+========================== */
+header{
+    width:100%;
+    height:80px;
+    position:fixed;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 60px;
+    background:rgba(15,20,40,.55);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(255,255,255,.1);
+    z-index:999;
+}
+
+.logo{
+
+    font-size:30px;
+    font-weight:700;
+    color:white;
+
+}
+
+.logo span{
+
+    color:#00d9ff;
+
+}
+/* ==========================
+   NAVIGATION
+========================== */
+nav{
+
+    display:flex;
+    gap:18px;
+
+}
+nav a{
+    text-decoration:none;
+    color:white;
+    padding:13px 26px;
+    border-radius:15px;
+    border:2px solid #00d9ff;
+    background:rgba(255,255,255,.05);
+    transition:.45s;
+    font-weight:600;
+}
+/* Hover */
+nav a:hover{
+    transform:scale(1.12);
+    background:#00d9ff;
+    color:#08111f;
+    box-shadow:0 0 25px #00d9ff;
+}
+/* Active */
+nav a.active{
+    background:#00d9ff;
+    color:#08111f;
+}
+/* ==========================
+   PAGES
+========================== */
+.page{
+    width:100%;
+    height:100vh;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    padding-top:90px;
+}
+
+.active-page{
+
+    display:flex;
+
+}
+/* ==========================
+   HOME
+========================== */
+.home-box{
+    width:82%;
+    height:72%;
+    background:rgba(255,255,255,.07);
+    backdrop-filter:blur(18px);
+    border-radius:25px;
+    border:1px solid rgba(255,255,255,.1);
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    transition:.5s;
+}
+.home-box:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 35px #00d9ff;
+}
+
+.home-left{
+    width:40%;
+    display:flex;
+    justify-content:center;
+}
+
+.home-left img{
+    width:280px;
+    height:280px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #00d9ff;
+    transition:.5s;
+}
+
+.home-left img:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 35px cyan;
+}
+
+.home-right{
+    width:45%;
+}
+
+.home-right h4{
+    color:#00d9ff;
+    font-size:28px;
+}
+
+.home-right h1{
+    font-size:58px;
+    margin:10px 0;
+}
+
+.home-right h2{
+    color:#00d9ff;
+    margin-bottom:20px;
+}
+
+.home-right p{
+    font-size:18px;
+    line-height:30px;
+    color:#ddd;
+}
+/* =====================================
+   SOCIAL ICONS
+===================================== */
+.social-icons{
+    display:flex;
+    gap:18px;
+    margin:30px 0;
+}
+
+.social-icons a{
+    width:50px;
+    height:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    border:2px solid #00d9ff;
+    color:white;
+    background:rgba(255,255,255,.08);
+    font-size:20px;
+    transition:.4s;
+}
+
+.social-icons a:hover{
+    background:#00d9ff;
+    color:#08111f;
+    transform:translateY(-6px) scale(1.15);
+    box-shadow:0 0 25px #00d9ff;
+}
+/* =====================================
+   BUTTONS
+===================================== */
+
+.buttons{
+    display:flex;
+    gap:20px;
+    margin-top:20px;
+}
+
+.btn{
+    padding:15px 35px;
+    border-radius:30px;
+    background:#00d9ff;
+    color:#08111f;
+    text-decoration:none;
+    font-weight:600;
+    transition:.4s;
+}
+
+.btn:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 30px #00d9ff;
+}
+
+.btn2{
+    background:transparent;
+    border:2px solid #00d9ff;
+    color:white;
+}
+
+.btn2:hover{
+    background:#00d9ff;
+    color:#08111f;
+}
+/* =====================================
+   CONTENT BOX
+===================================== */
+
+.content-box{
+    width:90%;
+    height:78%;
+    padding:40px;
+    border-radius:25px;
+    background:rgba(255,255,255,.07);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,.15);
+    transition:.4s;
+}
+
+.content-box:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 30px #00d9ff;
+}
+
+.content-box h2{
+    font-size:42px;
+    margin-bottom:25px;
+    color:#00d9ff;
+}
+
+.content-box p{
+    font-size:18px;
+    line-height:34px;
+    color:#ddd;
+}
+/* =====================================
+   ABOUT CARDS
+===================================== */
+
+.stats{
+    display:flex;
+    gap:25px;
+    margin-top:40px;
+}
+
+.card{
+    flex:1;
+    text-align:center;
+    padding:30px;
+    border-radius:20px;
+    background:rgba(255,255,255,.08);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.05);
+    background:rgba(0,217,255,.15);
+    box-shadow:0 0 30px #00d9ff;
+}
+
+.card h3{
+    font-size:40px;
+    color:#00d9ff;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:18px;
+}
+/* =====================================
+   SKILLS
+===================================== */
+
+.skills-box{
+    margin-top:25px;
+}
+
+.skill{
+    margin-bottom:22px;
+}
+
+.skill span{
+    display:block;
+    font-size:18px;
+    font-weight:600;
+    margin-bottom:8px;
+}
+
+.progress{
+    width:100%;
+    height:18px;
+    background:#1c2c3f;
+    border-radius:30px;
+    overflow:hidden;
+}
+
+.bar{
+    height:100%;
+    border-radius:30px;
+    text-align:right;
+    padding-right:10px;
+    color:white;
+    line-height:18px;
+    background:linear-gradient(90deg,#00d9ff,#008cff);
+    animation:grow 2s ease;
+}
+
+.html{width:95%;}
+.css{width:60%;}
+.js{width:30%;}
+.php{width:10%;}
+.python{width:30%;}
+.java{width:5%;}
+
+@keyframes grow{
+    from{
+        width:0;
+    }
+}
+/* =====================================
+   PROJECTS
+===================================== */
+.project-gallery{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+    margin-top:30px;
+}
+
+.project-image{
+    height:220px;
+    overflow:hidden;
+    border-radius:20px;
+    cursor:pointer;
+    border:2px solid rgba(255,255,255,.15);
+    background:rgba(255,255,255,.08);
+    transition:.4s;
+}
+
+.project-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.project-image:hover{
+    transform:translateY(-10px) scale(1.05);
+    box-shadow:0 0 30px #00d9ff;
+}
+
+.project-image:hover img{
+    transform:scale(1.15);
+}
+
+/* =====================================
+   TRAVELS
+===================================== */
+
+.travel-gallery{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+    margin-top:30px;
+}
+
+.travel-image{
+    height:220px;
+    overflow:hidden;
+    border-radius:20px;
+    cursor:pointer;
+    border:2px solid rgba(255,255,255,.15);
+    background:rgba(255,255,255,.08);
+    transition:.4s;
+}
+
+.travel-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.travel-image:hover{
+    transform:translateY(-10px) scale(1.05);
+    box-shadow:0 0 30px #00d9ff;
+}
+
+.travel-image:hover img{
+    transform:scale(1.15);
+}
+
+/* =====================================
+   CONTACT
+===================================== */
+
+.contact-box{
+    width:100%;
+}
+
+.contact-card{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    margin-top:30px;
+}
+
+.contact-card div,
+.contact-item{
+    background:rgba(255,255,255,.08);
+    padding:20px;
+    border-radius:18px;
+    text-align:center;
+    transition:.4s;
+    border:1px solid rgba(255,255,255,.1);
+}
+
+.contact-card div:hover,
+.contact-item:hover{
+    transform:translateY(-8px) scale(1.04);
+    box-shadow:0 0 25px #00d9ff;
+}
+
+.contact-card i,
+.contact-item i{
+    font-size:35px;
+    color:#00d9ff;
+    margin-bottom:12px;
+}
+
+.contact-card h3,
+.contact-item h3{
+    margin-bottom:8px;
+    color:#fff;
+}
+
+.contact-card p,
+.contact-item p,
+.contact-card a{
+    color:#ddd;
+    text-decoration:none;
+}
+
+.contact-card a:hover{
+    color:#00d9ff;
+}
+
+/* =====================================
+   GENERAL HOVER EFFECT
+===================================== */
+
+.home-box:hover,
+.content-box:hover,
+.card:hover,
+.skills-box:hover,
+.project-image:hover,
+.travel-image:hover,
+.contact-item:hover{
+
+    box-shadow: 0 0 25px #00d9ff;
+    transition: .4s;
+
+}
+/* =====================================
+   SCROLLBAR
+===================================== */
+::-webkit-scrollbar{
+    width:8px;
+}
+::-webkit-scrollbar-thumb{
+    background:#00d9ff;
+    border-radius:20px;
+}
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media(max-width:900px){
+
+header{
+    padding:15px 20px;
+    flex-direction:column;
+    height:auto;
+}
+
+nav{
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:15px;
+}
+
+.page{
+    padding:120px 20px 20px;
+}
+
+.home-box{
+    flex-direction:column;
+    height:auto;
+    padding:30px;
+    text-align:center;
+}
+
+.home-left,
+.home-right{
+    width:100%;
+}
+
+.home-left img{
+    width:180px;
+    height:180px;
+    margin-bottom:20px;
+}
+
+.home-right h1{
+    font-size:38px;
+}
+
+.home-right h2{
+    font-size:24px;
+}
+
+.home-right p{
+    font-size:16px;
+    line-height:28px;
+}
+
+.buttons,
+.social-icons{
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.project-gallery,
+.travel-gallery,
+.contact-card{
+    grid-template-columns:1fr;
+}
+
+.content-box{
+    height:auto;
+}
+
+.stats{
+    flex-direction:column;
+}
+
+}
